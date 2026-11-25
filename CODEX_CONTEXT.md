@@ -362,7 +362,7 @@ Recommended sequence:
 3. Resolve or explicitly record Varna's missing station metadata and the E2a timezone questions.
 4. Agree the station-selection scenarios and city aggregation method. The E1a quality flags and 75% period-coverage threshold are already confirmed.
 5. Design and review PostgreSQL migrations.
-6. Implement EEA ingestion with retry/backoff, timeouts, validation, idempotency, logging, and source provenance.
+6. EEA file discovery/download/archive MVP is implemented with retry/backoff, timeouts, Parquet signature and archive checksum validation, idempotency, provenance, and an ingestion run record. Parsing source rows into `measurements` remains to be implemented.
 7. Implement aggregation and historical query services.
 8. Add tests for missing days, leap years, duplicate ingestion, invalid records, station selection, timezone boundaries, and E1a/E2a overlap.
 9. Build the Blade UI and show coverage/limitations with every result.
@@ -401,3 +401,12 @@ Read `CODEX_CONTEXT.md`, the assignment brief, and `DATA_SOURCE_ANALYSIS.md` if 
 4. a proposed implementation plan in small milestones.
 
 Do not implement anything yet. Do not make assumptions about the unresolved ranking methodology, station weighting, coverage thresholds, or timezone conversions. Wait for approval before changing files.
+
+## 16. Current EEA ingestion architecture
+
+- `EeaAirQualityProvider` isolates EEA HTTP calls; `EeaDownloadClient` under `app/Providers/AirQuality/Eea` implements discovery, metadata checks, and streamed downloads.
+- `EeaIngestionRepository` and its Eloquent implementation own application database queries and writes for the ingestion use case.
+- `SyncEeaE1aService` coordinates discovery, file validation, idempotency, private archive writes, and run results.
+- `SyncEeaE1aJob` is dispatched monthly by Laravel's scheduler. The Artisan command is a thin manual entry point.
+- A successful local API sync discovered and archived eight E1a PM2.5 Parquet files across seven cities. This is an observed inventory, not proof that the remaining cities have no source data.
+- The current service archives raw files only. Measurement parsing, row-level quality filtering, and persistence into `measurements` are not implemented yet.
