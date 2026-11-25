@@ -1,0 +1,8 @@
+Countrycode,Timezone,AirQualityNetwork,AirQualityStation,AirQualityStationEoICode,AirQualityStationNatCode,SamplingPoint,AirPollutant,Longitude,Latitude,Altitude,MeasurementType,MeasurementMethod,AirQualityStationType,AirQualityStationArea,MeasurementEquipment,InletHeight,BuildingDistance,KerbDistance
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0020A,BG0020A,VT1,SPO-BG0020A_06001_100,PM2.5,,,214,active,,background,suburban,,5.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0039A,BG0039A,StZag1,SPO-BG0039A_06001_100,PM2.5,,,223,active,,background,urban,,5.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0045A,BG0045A,Ru2,SPO-BG0045A_06001_100,PM2.5,,,41,automatic,BETA,background,urban,,3.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0046A,BG0046A,Pe1,SPO-BG0046A_06001_100,PM2.5,,,770,active,,background,suburban,,5.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0050A,BG0050A,Sf7,SPO-BG0050A_06001_100,PM2.5,,,581,automatic,BETA,background,urban,,3.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0051A,BG0051A,Pld2,SPO-BG0051A_06001_100,PM2.5,,,166,automatic,BETA,background,urban,,3.0,-999.0,-999.0
+BG,http://dd.eionet.europa.eu/vocabulary/aq/timezone/UTC+01,NET-BG001A,STA-BG0070A,BG0070A,Ko1,SPO-BG0070A_06001_100,PM2.5,,,1321,active,,background,rural-nearcity,,3.0,-999.0,-999.0

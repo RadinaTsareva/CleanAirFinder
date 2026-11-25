@@ -1,0 +1,9 @@
+city,sampling_point,filename,url,dataset,pollutant
+Varna,SPO-BG0075A_06001_100,SPO-BG0075A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0075A_06001_100.parquet,E1a,PM2.5
+Veliko Tarnovo,SPO-BG0020A_06001_100,SPO-BG0020A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0020A_06001_100.parquet,E1a,PM2.5
+Sofia,SPO-BG0050A_06001_100,SPO-BG0050A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0050A_06001_100.parquet,E1a,PM2.5
+Sofia,SPO-BG0070A_06001_100,SPO-BG0070A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0070A_06001_100.parquet,E1a,PM2.5
+Ruse,SPO-BG0045A_06001_100,SPO-BG0045A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0045A_06001_100.parquet,E1a,PM2.5
+Plovdiv,SPO-BG0051A_06001_100,SPO-BG0051A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0051A_06001_100.parquet,E1a,PM2.5
+Stara Zagora,SPO-BG0039A_06001_100,SPO-BG0039A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0039A_06001_100.parquet,E1a,PM2.5
+Pernik,SPO-BG0046A_06001_100,SPO-BG0046A_06001_100.parquet,https://eeadmz1batchservice02.blob.core.windows.net/airquality-p-e1a/BG/SPO-BG0046A_06001_100.parquet,E1a,PM2.5
